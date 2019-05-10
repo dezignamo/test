@@ -1,0 +1,109 @@
+/*NAVIGATION*/
+nav {
+ width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #182b44;
+  text-align: middle;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  padding: 35px 20px;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  background-color: #314c72;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  height: 100%;
+}
+
+nav ul li a:active {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  opacity: 0.5;
+}
+
+/*LARGE Home page Image*/
+.bg {
+  /* The image used */
+  background-image: url("images/live-music-cover-1400x830.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*FOOTER*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #990000;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #990000;
+}
+footer ul li {
+  float: left;
+}
+
+footer ul li a {
+  display: inline-block;
+  color: white;
+  padding: 20px 20px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  opacity: 0.5;
+}
+
+footer .facebook {
+  float: right;
+  padding: 0px;
+  margin-left: 300px;
+}
+footer .instagram {
+  float: right;
+  padding: 0px;
+}
+footer .twitter {
+  float: right;
+  padding: 0px;
+  width: 21px;
+}
+footer .youtube {
+  float: right;
+  padding: 0px;
+  width: 21px;
+}
