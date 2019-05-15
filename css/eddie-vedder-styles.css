@@ -1,3 +1,7 @@
+body {
+  margin: 0; padding: 0;
+}
+
 /*NAVIGATION*/
 nav {
  width: 100%;
@@ -20,7 +24,7 @@ nav ul li {
 nav ul li a {
   display: inline-block;
   color: white;
-  padding: 35px 20px;
+  padding: 20px 20px;
   text-decoration: none;
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
@@ -42,10 +46,14 @@ nav ul li a:active {
   opacity: 0.5;
 }
 
+.logo {
+  padding: 10px 20px;
+}
+
 /*LARGE Home page Image*/
 .bg {
   /* The image used */
-  background-image: url("images/live-music-cover-1400x830.jpg");
+  background-image: url("live-music-cover.jpg");
 
   /* Full height */
   height: 100%;
