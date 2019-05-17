@@ -5,9 +5,11 @@
   <title>Eddie Vedder About</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
-  <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
@@ -21,83 +23,151 @@ p.smaller {
 line-height: .03;
 }
 
+ul.social-causes {
+    padding: 0;
+    list-style-type: none;
+}
+
+td.no-indent {
+    padding: 0;
+}
+
+ h3.less-space {
+  margin-bottom: 0;
+}
+
+.row-m-t {
+  margin-top : 20px
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 </style>
 
 </head>
 
 <body>
 
-/*bootstrap fixed navigation*/
-  <body style="height:1500px">
+  <!--  bootstrap fixed navigation  -->
+    <body style="height:1400px">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
+  <!-- bootstreap fixed nav, changed navigation background-color
+  <nav class="navbar-default navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <ul class="navbar-default nav ul li a">
+        <li><a href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a><li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li class="active"><a href="discopgraphy.html">Discography</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="tour.html">Tour</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="about.html">About</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="discopgraphy.html">Discography</a></li>
-      <li><a href="merchandise.html">MERCHANDISE</a></li>
-      <li><a href="tour.html">TOUR</a></li>
-    </ul>
-  </div>
-</nav>
+    </div>
+  </nav>
+    -->
 
-/*start 3-column body section*/
+  <!-- original non-fixed nav bar -->
+
+  <nav class="navbar-fixed-top">
+    <ul>
+      <li><a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="discography.html">Discography</a></li>
+      <li><a href="merchandise.html">Merchandise</a></li>
+      <li><a href="tour.html">Tour</a></li>
+    </ul>
+  </nav>
+
+  <!-- end original non-fixed nav bar -->
+
+<!-- start 3-column body section  -->
 
 <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-4"> img src="images/eddie-vedder-ukulele-boat-400x400.jpg" alt="Ukulele"
-        img src="images/eddie-vedder-sing-w-mic-400x400.jpg alt="Eddie singing"></div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <img src="images/eddie-vedder-2-stack-photos-400x817.jpg" class="img-fluid">
+      </div>
 
-      <div class="col-sm-4">
+<div class="row-m-t"></div>
+
+      <div class="col-sm-4 col-md-4 col-lg-4">
         <p><b>EDDIE VEDDER</b> <i>(born Edward Louis Severson III; December 23, 1964)</i> is an American musician, multi instrumentalist and singer-songwriterbest known as the lead vocalist and one of three guitarists of the American rock band Pearl Jam. He is known for his powerful baritone vocals. He also appeared as a guest vocalist in Temple of the Dog, the one-off tribute band dedicated to the late singer Andrew Wood. Hit Parader magazine placed him at number 23 on their list of the "Top 100 Metal Vocalists of All Time".</p>
 
         <p>In 2007, Vedder released his first solo album as a soundtrack for the film Into the Wild (2007). His second album Ukulele Songs and a live DVD titled Water on the Road were released in 2011.</p>
 
         <p>In 2017, Vedder was inducted into the Rock and Roll Hall of Fame as a member of Pearl Jam.</p></div>
 
-      <div class="col-sm-4">
-        <p><h3>AWARDS</h3></p>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <h3 class="less-space">AWARDS</h3>
         <table>
           <tr>
-            <td><b>2017</b></td>
+            <td class="no-indent"><b>2017</b></td>
             <td>Rock and Roll Hall of Fame as a Member of Pearl Jam</td>
           </tr>
           <tr>
-            <td><b>2012</b></td>
+            <td class="no-indent"><b>2012</b></td>
             <td>Grammy Nominee, Best Folk Album (Album: Ukelele Songs)</td>
           </tr>
           <tr>
-            <td><b>2012</b></td>
+            <td class="no-indent"><b>2012</b></td>
             <td>Golden Globe Winner, Best Original Song – Motion Picture (Song: "Guaranteed")</td>
           </tr>
       </table>
 
-        <p class="smaller"><h3>SOCIAL CAUSES</h3></p>
-        <p class="small">
-      Artists for Peace and Justice<br>
-      Bridge School<br>
-      David Lynch Foundation<br>
-      Every Mother Counts<br>
-      Gabrielle's Angel Foundation<br>
-      Hudson River Sloop Clearwater<br>
-      Johnson Ohana Charitable Foundation<br>
-      Kelly Slater Foundation<br>
-      MusiCares<br>
-      PETA<br>
-      Robin Hood<br>
-      Silverlake Conservatory of Music<br>
-      Surfrider Foundation<br>
-      Waves for Water<br></p>
+      <h3 class="less-space">SOCIAL CAUSES</h3>
+
+      <ul class="social-causes">
+        <li>Artists for Peace and Justice</li>
+        <li>Bridge School</li>
+        <li>David Lynch Foundation</li>
+        <li>Every Mother Counts</li>
+        <li>Gabrielle's Angel Foundation</li>
+        <li>Hudson River Sloop Clearwater</li>
+        <li>Johnson Ohana Charitable Foundation</li>
+        <li>Kelly Slater Foundation</li>
+        <li>MusiCares</li>
+        <li>PETA</li>
+        <li>Robin Hood</li>
+        <li>Silverlake Conservatory of Music</li>
+        <li>Surfrider Foundation</li>
+        <li>Waves for Water</li>
+      </ul>
+
       </div>
   </div>
 </div>
 
-  /*end 3-column body section*/
+  <!-- end 3-column body section -->
 
+  <!-- bootstrap stick footer -->
+  <footer class="footer mt-auto py-3">
+  <div class="container">
+  <span class="text-muted">
+    <div class="footer">
+    <ul>
+      <li><a href="#">© COPYRIGHT 2019</a></li>
+      <li><a href="#">LEGAL NOTICE</a></li>
+      <li><a href="#">PRIVACY POLICY</a></li>
+      <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
+      <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
+      <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
+      <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
+    </ul>
+  </div>
+  </span>
+  </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+
+<!-- original footer code
  <footer>
    <ul>
      <li><a href="#">© COPYRIGHT 2019</a></li>
@@ -109,6 +179,7 @@ line-height: .03;
      <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
     </ul>
   </footer>
+  original footer code end -->
 
 </body>
 </html>

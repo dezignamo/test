@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
-      <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link href="sticky-footer-navbar.css" rel="stylesheet">
+      <link href="album.css" rel="stylesheet">
+      <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 
     <style>
     .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 300px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -55,89 +58,180 @@
   color: white;
   transform: rotateY(180deg);
 }
+
+.row-m-t {
+  margin-top : 20px
+}
+
+.row-m-b {
+  margin-bottom : 60px
+}
+
+.centered > div {
+    align: center;
+    display: inline-block;
+    text-align: left;
+    font-size: 13px;
+  }
+
+
+
 </style>
 
   </head>
 
   <body>
 
-    <nav>
+    <!--  bootstrap fixed navigation  -->
+      <body style="height:1400px">
+
+    <!-- bootstreap fixed nav, changed navigation background-color
+    <nav class="navbar-default navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-default nav ul li a">
+          <li><a href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a><li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li class="active"><a href="discopgraphy.html">Discography</a></li>
+          <li><a href="merchandise.html">Merchandise</a></li>
+          <li><a href="tour.html">Tour</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+      -->
+
+    <!-- original non-fixed nav bar -->
+
+    <nav class="navbar-fixed-top">
       <ul>
-        <li>
-  <a class="logo" href="#"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
+        <li><a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
         </li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">MEDIA</a></li>
-        <li><a href="#">DISCOGRAPHY</a></li>
-        <li><a href="#">MERCHANDISE</a></li>
-        <li><a href="#">TOUR</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a class="active" href="discography.html">Discography</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="tour.html">Tour</a></li>
       </ul>
     </nav>
 
-    /*start 3-column flipcard section*/
-
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="flip-card">
+<!-- end original non-fixed nav bar -->
+<div class="row-m-t"></div>
+  <!-- start 3-column flipcard section  -->
+  <div class="container">
+    <div class="content-wrap">
+        <div class="row centered">
+          <div class="col-xs-12 col-md-4">
+          <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="images/ev-ukulele-songs-cd-cover-300x300.jpg" width="300" height="300"/>
+                  <img src="images/ev-ukulele-songs-cd-cover-300x300.jpg" width="400" height="400"/>
                 </div>
                 <div class="flip-card-back">
-                  <iframe src="https://open.spotify.com/embed/album/6aAJSaFsL79u7AGas96NqB" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  <iframe src="https://open.spotify.com/embed/album/6aAJSaFsL79u7AGas96NqB" width="400" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                </div>
+                </div>
                 </div>
 
-      <div class="col-sm-4">
-        <div class="flip-card">
+
+      <div class="col-xs-12 col-md-4">
+      <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <img src="images/water-on-the-road-cd-cover_300x300.jpg" width="300" height="300"/>
+              <img src="images/water-on-the-road-cd-cover_300x300.jpg" width="400" height="400"/>
             </div>
             <div class="flip-card-back">
-              <iframe src="https://open.spotify.com/embed/user/robrunderkamp/playlist/6CbxoMsjTPeRBRkAB5NjQ0" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>"
+              <iframe src="https://open.spotify.com/embed/user/robrunderkamp/playlist/6CbxoMsjTPeRBRkAB5NjQ0" width="400" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>"
+            </div>
+            </div>
+            </div>
             </div>
 
-    <div class="col-sm-4">
-          <div class="flip-card">
+
+    <div class="col-xs-12 col-md-4">
+    <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img src="images/into-the-wild_cd_cover_300x300.jpg" width="300" height="300"/>
+                <img src="images/into-the-wild_cd_cover_300x300.jpg" width="400" height="400"/>
               </div>
             <div class="flip-card-back">
-              <iframe src="https://open.spotify.com/embed/user/dominiquesommers/playlist/4kcdRyHvfQ3b9JWoI0NkXI" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              <iframe src="https://open.spotify.com/embed/user/dominiquesommers/playlist/4kcdRyHvfQ3b9JWoI0NkXI" width="400" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
-  /*start 4-column  2-row  thumbnail section*/
+<div class="row-m-b"></div>
+
+<!--  start 4-column  2-row  thumbnail section  -->
+<div class="container-fluid">
+  <div class="content-wrap">
             <div class="row">
               <div class="col-md-3">
                 <div class="thumbnail"><img src="images/ev-eat-pray-love-cd.jpg" alt="Eddie Vedder Eat, Pray, Love CD Cover" style="width:100%"></div>
+                </div>
 
               <div class="col-md-3">
                 <div class="thumbnail"><img src="images/ev-i-am-sam-cd.jpg" alt="Eddie Vedder I Am Sam Soundtrack CD Cover" style="width:100%"></div>
+                </div>
 
               <div class="col-md-3">
                 <div class="thumbnail"><img src="images/ev-best-of-pearl-jam-cd.jpg" alt="Best of Pearl Jam CD Cover" style="width:100%"></div>
+                </div>
 
               <div class="col-md-3">
                 <div class="thumbnail"><img src="images/pearl-jam-1995-cd.jpg" alt="Pearl Jam 1995 CD Cover" style="width:100%"></div>
+            </div>
             </div>
 
             <div class="row">
               <div class="col-md-3">
                 <div class="thumbnail"><img src="images/pearl-jam-building-bridges-cd.jpg" alt="Pearl Jam Building Bridges CD Cover" style="width:100%"></div>
+                </div>
 
               <div class="col-md-3">
                 <div class="thumbnail"><img src="images/pearl-jam-essential-1991-2003-cd.jpg" alt="Pearl jam Essential 1991-2003 CD Cover" style="width:100%"></div>
+                </div>
 
               <div class="col-md-3">
                 <div class="thumbnail"><img src="images/pearl-jam-live-1994-cd.jpg" alt="Pearl Jam Live 1994 CD Cover" style="width:100%"></div>
+                </div>
 
               <div class="col-md-3">
                 <div class="thumbnail"><img src="images/pearl-jam-ten-cd.jpg" alt="Pearl Jam 10 CD Cover" style="width:100%"></div>
             </div>
+          </div>
+        </div>
+        </div>
 
-      <footer>
+<!-- bootstrap stick footer -->
+<footer class="footer mt-auto py-3">
+<div class="container">
+<span class="text-muted">
+  <div class="footer">
+  <ul>
+    <li><a href="#">© COPYRIGHT 2019</a></li>
+    <li><a href="#">LEGAL NOTICE</a></li>
+    <li><a href="#">PRIVACY POLICY</a></li>
+    <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
+    <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
+    <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
+    <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
+  </ul>
+</div>
+</span>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+
+        <!-- original footer code
+        <div class="footer">
         <ul>
           <li><a href="#">© COPYRIGHT 2019</a></li>
           <li><a href="#">LEGAL NOTICE</a></li>
@@ -147,7 +241,8 @@
           <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
           <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
         </ul>
-      </footer>
+      </div>
+    original footer code -->
 
   </body>
 </html>

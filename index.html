@@ -6,11 +6,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
-  <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   <style>
 body  {
   background-image: url("live-music-cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 </style>
 
@@ -18,32 +25,78 @@ body  {
 
 <body>
 
-  <nav>
+  <!--  bootstrap fixed navigation  -->
+    <body style="height:1400px">
+
+  <!-- bootstreap fixed nav, changed navigation background-color
+  <nav class="navbar-default navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <ul class="navbar-default nav ul li a">
+        <li><a href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a><li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li class="active"><a href="discopgraphy.html">Discography</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="tour.html">Tour</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+    -->
+
+  <!-- original non-fixed nav bar -->
+
+  <nav class="navbar-fixed-top">
     <ul>
-      <li>
-<a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
+      <li><a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
       </li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="#">MEDIA</a></li>
-      <li><a href="discography.html">DISCOGRAPHY</a></li>
-      <li><a href="#">MERCHANDISE</a></li>
-      <li><a href="#">TOUR</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="discography.html">Discography</a></li>
+      <li><a href="merchandise.html">Merchandise</a></li>
+      <li><a href="tour.html">Tour</a></li>
     </ul>
   </nav>
 
+<!-- end original non-fixed nav bar -->
 
 
- <footer>
-   <ul>
-     <li><a href="#">© COPYRIGHT 2019</a></li>
-     <li><a href="#">LEGAL NOTICE</a></li>
-     <li><a href="#">PRIVACY POLICY</a></li>
-     <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
-     <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
-     <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
-     <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
-    </ul>
-  </footer>
+
+<!-- bootstrap stick footer -->
+<footer class="footer mt-auto py-3">
+<div class="container">
+<span class="text-muted">
+  <div class="footer">
+  <ul>
+    <li><a href="#">© COPYRIGHT 2019</a></li>
+    <li><a href="#">LEGAL NOTICE</a></li>
+    <li><a href="#">PRIVACY POLICY</a></li>
+    <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
+    <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
+    <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
+    <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
+  </ul>
+</div>
+</span>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+
+<!-- original footer code
+<footer>
+ <ul>
+   <li><a href="#">© COPYRIGHT 2019</a></li>
+   <li><a href="#">LEGAL NOTICE</a></li>
+   <li><a href="#">PRIVACY POLICY</a></li>
+   <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
+   <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
+   <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
+   <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
+  </ul>
+</footer>
+original footer code end -->
 
 </body>
 </html>

@@ -1,8 +1,8 @@
 body {
-  margin: 0; padding: 0;
+  padding-top: 60px;
+  padding-left: 10px;
 }
 
-/*NAVIGATION*/
 nav {
  width: 100%;
   margin: 0;
@@ -21,6 +21,13 @@ nav ul li {
   float: left;
 }
 
+/* fixed NAVIGATION
+.navbar-default {
+  background-color: #182b44;
+  margin-bottom: 50px;
+}
+*/
+
 nav ul li a {
   display: inline-block;
   color: white;
@@ -33,13 +40,17 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #314c72;
+  color: white;
+  text-decoration: none;
   font-family: 'Barlow', sans-serif;
   font-weight: 800;
   letter-spacing: 1px;
   height: 100%;
+  opacity: 0.5;
 }
 
 nav ul li a:active {
+  background-color: #314c72;
   font-family: 'Barlow', sans-serif;
   font-weight: 800;
   letter-spacing: 1px;
@@ -47,7 +58,7 @@ nav ul li a:active {
 }
 
 .logo {
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 /*LARGE Home page Image*/
@@ -63,8 +74,12 @@ nav ul li a:active {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.content-wrap {
+  padding-bottom: 60px;    /* Footer height */
+}
 /*FOOTER*/
-footer {
+.footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -72,18 +87,18 @@ footer {
   width: 100%;
   background-color: #990000;
 }
-footer ul {
+.footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #990000;
 }
-footer ul li {
+.footer ul li {
   float: left;
 }
 
-footer ul li a {
+.footer ul li a {
   display: inline-block;
   color: white;
   padding: 20px 20px;
@@ -92,7 +107,7 @@ footer ul li a {
   font-size: 12px;
   text-decoration: none;
 }
-footer ul li a:hover {
+.footer ul li a:hover {
   opacity: 0.5;
 }
 
@@ -114,4 +129,16 @@ footer .youtube {
   float: right;
   padding: 0px;
   width: 21px;
+}
+h1, h2, h3, h4, h5 {
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+p {
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
 }
