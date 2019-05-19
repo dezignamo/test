@@ -2,90 +2,250 @@
 <html lang="en">
 <head>
   <title>Vedder Merchandise</title>
-  <link rel="stylesheet" href="./assets/stylesheets/javascript-filtering.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="album.css" rel="stylesheet">
+    <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
 </head>
 <body>
 <!-- HTML COMMENT -->
-<a href="https://www.w3schools.com/howto/howto_js_filter_elements.asp">How to filter items</a>
+<!--  bootstrap fixed navigation  -->
+
+
+<!-- bootstreap fixed nav, changed navigation background-color
+<nav class="navbar-default navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <ul class="navbar-default nav ul li a">
+      <li><a href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a><li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li class="active"><a href="discopgraphy.html">Discography</a></li>
+      <li><a href="merchandise.html">Merchandise</a></li>
+      <li><a href="tour.html">Tour</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+  -->
+
+<!-- original non-fixed nav bar -->
+
+<nav class="navbar-fixed-top">
+  <ul>
+    <li><a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="discography.html">Discography</a></li>
+    <li><a class="active" href="merchandise-filtering.html">Merchandise</a></li>
+    <li><a href="tour.html">Tour</a></li>
+  </ul>
+</nav>
+
+<div class="row-m-t"></div>
 
 <!-- Control buttons -->
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('kittens')"> Kittens</button>
-  <button class="btn" onclick="filterSelection('puppies')"> Puppies</button>
-  <button class="btn" onclick="filterSelection('other')"> Other</button>
+  <button type="button" class="btn btn-sm" onclick="filterSelection('all')"> Show all</button>
+  <button type="button" class="btn btn-sm" onclick="filterSelection('clothing')"> Clothing</button>
+  <button type="button" class="btn btn-sm" onclick="filterSelection('art')"> Art</button>
+  <button type="button" class="btn btn-sm" onclick="filterSelection('tchotchke')"> Tchotchke</button>
 </div>
 
+<div class="row-m-t"></div>
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <div class="container">
-  <div class="filterDiv kittens">
-    <img src="./assets/images/filter/kitten-1-thumbnail.jpg" />
+  <div class="card-columns">
+    <div class="card-deck clothing">
+    <div class="card mb-4 shadow-sm text-white bg-dark">
+    <img class="card-img-top" src="images/filter/merch-ev-collage-shirt_600x600.jpg" alt="Eddie Vedder photo t-shirt">
+      <div class="card-body">
+        <h5 class="card-title">Eddie Vedder Photo Collage Shirt</h5>
+        <p class="card-text">Colorful collage shirt of Eddie Vedder photos.</p>
+
+    </div>
+    </div>
+    </div>
+
+      <div class="card-deck art">
+      <div class="card mb-4 shadow-sm text-white bg-dark">
+      <img class="card-img-top" src="images/filter/merch-wall-print-600x600.jpg" alt="Eddie Vedder Painting">
+      <div class="card-body">
+        <h5 class="card-title">Eddie Vedder Painting</h5>
+        <p class="card-text">Modern art painting.</p>
+
+    </div>
+    </div>
+    </div>
+
+      <div class="card-deck clothing">
+        <div class="card mb-4 shadow-sm text-white bg-dark">
+      <img class="card-img-top" src="images/filter/merch-yoga-pants_600x600.jpg" alt="Yoga Pants">
+      <div class="card-body">
+        <h5 class="card-title">Yoga Pants</h5>
+        <p class="card-text">Classic Yoga Leggings .</p>
+
+    </div>
+    </div>
+    </div>
+
+      <div class="card-deck tchotchke">
+      <div class="card mb-4 shadow-sm text-white bg-dark">
+    <img class="card-img-top" src="images/filter/ev-guitar-pick-collection_600x600.jpg" alt="Yoga Pants">
+    <div class="card-body">
+      <h5 class="card-title">Guitar Pick Collection</h5>
+      <p class="card-text">Play like Eddie.</p>
+
   </div>
-  <div class="filterDiv puppies">
-    <img src="./assets/images/filter/puppy-1-thumbnail.jpg" />
   </div>
-  <div class="filterDiv puppies">
-    <img src="./assets/images/filter/puppy-2-thumbnail.jpg" />
   </div>
-  <div class="filterDiv puppies">
-    <img src="./assets/images/filter/puppy-3-thumbnail.jpg" />
-  </div>
-  <div class="filterDiv other">
-    <img src="./assets/images/filter/other-1-thumbnail.jpg" />
-  </div>
-  <div class="filterDiv other">
-    <img src="./assets/images/filter/other-2-thumbnail.jpg" />
-  </div>
+
+
+      <div class="card-deck art">
+    <div class="card mb-4 shadow-sm text-white bg-dark">
+  <img class="card-img-top" src="images/filter/ev-jesus-framed-600x600.jpg" alt="Yoga Pants">
+  <div class="card-body">
+    <h5 class="card-title">St. Vedder Framed</h5>
+    <p class="card-text">Saint or sinner?.</p>
+
+</div>
+</div>
 </div>
 
+  <div class="card-deck tchotchke">
+  <div class="card mb-4 shadow-sm text-white bg-dark">
+<img class="card-img-top" src="images/filter/ev-mug_600x600.jpg" alt="Yoga Pants">
+<div class="card-body">
+  <h5 class="card-title">Coffee Mug</h5>
+  <p class="card-text">Morning buzz.</p>
+
+</div>
+</div>
+</div>
+
+  <div class="card-deck tchotchke">
+  <div class="card mb-4 shadow-sm text-white bg-dark">
+<img class="card-img-top" src="images/filter/ev-pillow-cover-600x600.jpg" alt="Yoga Pants">
+<div class="card-body">
+  <h5 class="card-title">Eddie Vedder Pillow</h5>
+  <p class="card-text">Sleep on this!</p>
+
+</div>
+</div>
+</div>
+
+  <div class="card-deck tchotchke">
+  <div class="card mb-4 shadow-sm text-white bg-dark">
+<img class="card-img-top" src="images/filter/ev-prayer-candle_600x600.jpg" alt="Yoga Pants">
+<div class="card-body">
+  <h5 class="card-title">Prayer Candle</h5>
+  <p class="card-text">Alter addition.</p>
+
+</div>
+</div>
+</div>
+
+
+    <div class="card-deck clothing">
+  <div class="card mb-4 shadow-sm text-white bg-dark">
+<img class="card-img-top" src="images/filter/ev-sweatshirt_600x600.jpg" alt="Yoga Pants">
+<div class="card-body">
+  <h5 class="card-title">Hoodie</h5>
+  <p class="card-text">Stay warm and cool.</p>
+  </div>
+</div>
+</div>
+
+
+  <div class="card-deck clothing">
+  <div class="card mb-4 shadow-sm text-white bg-dark">
+<img class="card-img-top" src="images/filter/ev-tshirt-black_600x600.jpg" alt="Yoga Pants">
+<div class="card-body">
+  <h5 class="card-title">Black t-shirt</h5>
+  <p class="card-text">Classic tee.</p>
+
+</div>
+</div>
+</div>
+
+  <div class="card-deck art">
+  <div class="card mb-4 shadow-sm text-white bg-dark">
+<img class="card-img-top" src="images/filter/ev-wall-clock_600x600.jpg" alt="Yoga Pants">
+<div class="card-body">
+  <h5 class="card-title">Wall Clock</h5>
+  <p class="card-text">Never on time.</p>
+
+</div>
+</div>
+</div>
+
+  <div class="card-deck clothing">
+  <div class="card mb-4 shadow-sm text-white bg-dark">
+<img class="card-img-top" src="images/filter/ev-shoes_600x600.jpg" alt="Yoga Pants">
+<div class="card-body">
+  <h5 class="card-title">Shoes</h5>
+  <p class="card-text">Keep moving in these.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
 <script>
-  filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("filterDiv");
-    if (c == "all") c = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("card-deck");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
+  element.className = arr1.join(" ");
+}
 
-  // Show filtered elements
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {
-        element.className += " " + arr2[i];
-      }
-    }
-  }
-
-  // Hide elements that are not selected
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-
-  // Add active class to the current control button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 </script>
+
 </body>
 </html>
