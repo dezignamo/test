@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
   <title>Vedder Merchandise</title>
   <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
 <!--  bootstrap fixed navigation  -->
@@ -38,7 +38,7 @@
 
 <nav class="navbar-fixed-top">
   <ul>
-    <li><a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
+    <li><a class="logo" href="index.html"><img src="images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
     </li>
     <li><a href="about.html">About</a></li>
     <li><a href="media.html">Media</a></li>
@@ -51,164 +51,31 @@
 
 
 <!-- Control buttons -->
-<div class="btn-container">
 <div id="myBtnContainer">
   <button type="button" class="btn btn-sm" onclick="filterSelection('all')"> Show all</button>
   <button type="button" class="btn btn-sm" onclick="filterSelection('clothing')"> Clothing</button>
   <button type="button" class="btn btn-sm" onclick="filterSelection('art')"> Art</button>
   <button type="button" class="btn btn-sm" onclick="filterSelection('tchotchke')"> Tchotchke</button>
 </div>
-</div>
 
 
-<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <div class="container">
-  <div class="card-columns">
-    <div class="filterDiv clothing">
-    <div class="card-deck">
-    <div class="card mb-4 shadow-sm text-white bg-dark">
-    <img class="card-img-top" src="images/filter/merch-ev-collage-shirt_600x600.jpg" alt="Eddie Vedder photo t-shirt">
-      <div class="card-body">
-        <h5 class="card-title">Eddie Vedder Photo Collage Shirt.</h5>
-        <p class="card-text">Colorful collage shirt of Eddie Vedder photos.</p>
-    </div>
-    </div>
-    </div>
-    </div>
-      <div class="filterDiv art">
-      <div class="card-deck">
-      <div class="card mb-4 shadow-sm text-white bg-dark">
-      <img class="card-img-top" src="images/filter/merch-wall-print-600x600.jpg" alt="Eddie Vedder Painting">
-      <div class="card-body">
-        <h5 class="card-title">Eddie Vedder Painting</h5>
-        <p class="card-text">Modern art painting.</p>
-    </div>
-    </div>
-    </div>
-    </div>
-      <div class="filterDiv clothing">
-      <div class="card-deck">
-        <div class="card mb-4 shadow-sm text-white bg-dark">
-      <img class="card-img-top" src="images/filter/merch-yoga-pants_600x600.jpg" alt="Yoga Pants">
-      <div class="card-body">
-        <h5 class="card-title">Yoga Pants</h5>
-        <p class="card-text">Classic Yoga Leggings.</p>
-    </div>
-    </div>
-    </div>
-    </div>
-
-      <div class="card-deck tchotchke">
-      <div class="card mb-4 shadow-sm text-white bg-dark">
-    <img class="card-img-top" src="images/filter/ev-guitar-pick-collection_600x600.jpg" alt="Yoga Pants">
-    <div class="card-body">
-      <h5 class="card-title">Guitar Pick Collection</h5>
-      <p class="card-text">Play like Eddie.</p>
-
-  </div>
-  </div>
-  </div>
-
-
-      <div class="card-deck art">
-    <div class="card mb-4 shadow-sm text-white bg-dark">
-  <img class="card-img-top" src="images/filter/ev-jesus-framed-600x600.jpg" alt="Yoga Pants">
-  <div class="card-body">
-    <h5 class="card-title">St. Vedder Framed</h5>
-    <p class="card-text">Saint or sinner?</p>
-
-</div>
-</div>
-</div>
-
-  <div class="card-deck tchotchke">
-  <div class="card mb-4 shadow-sm text-white bg-dark">
-<img class="card-img-top" src="images/filter/ev-mug_600x600.jpg" alt="Yoga Pants">
-<div class="card-body">
-  <h5 class="card-title">Coffee Mug</h5>
-  <p class="card-text">Morning buzz.</p>
-
-</div>
-</div>
-</div>
-
-  <div class="card-deck tchotchke">
-  <div class="card mb-4 shadow-sm text-white bg-dark">
-<img class="card-img-top" src="images/filter/ev-pillow-cover-600x600.jpg" alt="Yoga Pants">
-<div class="card-body">
-  <h5 class="card-title">Eddie Vedder Pillow</h5>
-  <p class="card-text">Sleep on this!</p>
-
-</div>
-</div>
-</div>
-
-  <div class="card-deck tchotchke">
-  <div class="card mb-4 shadow-sm text-white bg-dark">
-<img class="card-img-top" src="images/filter/ev-prayer-candle_600x600.jpg" alt="Yoga Pants">
-<div class="card-body">
-  <h5 class="card-title">Prayer Candle</h5>
-  <p class="card-text">Alter addition.</p>
-
-</div>
-</div>
-</div>
-
-
-    <div class="card-deck clothing">
-  <div class="card mb-4 shadow-sm text-white bg-dark">
-<img class="card-img-top" src="images/filter/ev-sweatshirt_600x600.jpg" alt="Yoga Pants">
-<div class="card-body">
-  <h5 class="card-title">Hoodie</h5>
-  <p class="card-text">Stay warm and cool.</p>
+<div class="filterDiv clothing">
+  <img src="images/filter/merch-ev-collage-shirt_600x600.jpg" alt="Eddie Vedder photo t-shirt" style="width:100%">
+  <div class="container">
+    <h5 class="card-title">Eddie Vedder Photo Collage Shirt.</h5>
+    <p>Colorful collage shirt of Eddie Vedder photos.</p>
   </div>
 </div>
 </div>
-
-
-  <div class="card-deck clothing">
-  <div class="card mb-4 shadow-sm text-white bg-dark">
-<img class="card-img-top" src="images/filter/ev-tshirt-black_600x600.jpg" alt="Yoga Pants">
-<div class="card-body">
-  <h5 class="card-title">Black t-shirt</h5>
-  <p class="card-text">Classic tee.</p>
-
-</div>
-</div>
-</div>
-
-  <div class="card-deck art">
-  <div class="card mb-4 shadow-sm text-white bg-dark">
-<img class="card-img-top" src="images/filter/ev-wall-clock_600x600.jpg" alt="Yoga Pants">
-<div class="card-body">
-  <h5 class="card-title">Wall Clock</h5>
-  <p class="card-text">Never on time.</p>
-
-</div>
-</div>
-</div>
-
-  <div class="card-deck clothing">
-  <div class="card mb-4 shadow-sm text-white bg-dark">
-<img class="card-img-top" src="images/filter/ev-shoes_600x600.jpg" alt="Yoga Pants">
-<div class="card-body">
-  <h5 class="card-title">Shoes</h5>
-  <p class="card-text">Keep moving in these.</p>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
 <!-- bootstrap stick footer -->
 <footer class="footer mt-auto py-3">
 <div class="container-fluid">
 <span class="text-muted">
 
-<!--collapsable footer -->
-<div class="footer">
-<!-- part collapsble footer that doesn't work id="myFooter"-->
+<!--collapsable footer
+<div class="footer" id="myFooter">
+ -->
   <ul>
     <li><a href="#">© COPYRIGHT 2019</a></li>
     <li><a href="#">LEGAL NOTICE</a></li>
@@ -218,9 +85,9 @@
     <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
     <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
     <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
-    <!-- Part of collapsable footer that doesn't work
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  end collapsable footer that doesn't work -- >
+    <!--<part of collapsable footer that didn't work
+    a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
+
   </ul>
 </div>
 </div>
@@ -230,10 +97,10 @@
 </div>
 </footer>
 
-<!-- script for stick nav-footer -->
+<!-- script for stick nav-footer  -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-<!-- end script for sticky nav-footer -->
+  <!-- end script for sticky nav-footer -->
 
 <!--collapsable footer script
 <script>
@@ -248,7 +115,7 @@ function myFunction() {
 </script>
  -->
 
-
+<!-- filtering scripts
 <script>
 filterSelection("all")
 function filterSelection(c) {
@@ -293,6 +160,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+end filtering scripts -->
 
 </body>
 </html>

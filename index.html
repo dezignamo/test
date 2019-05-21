@@ -23,10 +23,9 @@ body  {
 
 </head>
 
-<body>
 
   <!--  bootstrap fixed navigation  -->
-    <body style="height:1400px">
+    <body style="height:1600px">
 
   <!-- bootstreap fixed nav, changed navigation background-color
   <nav class="navbar-default navbar navbar-fixed-top">
@@ -62,26 +61,48 @@ body  {
 
 
 
-<!-- bootstrap stick footer -->
+<!-- bootstrap stick footer
 <footer class="footer mt-auto py-3">
-<div class="container">
+<div class="container-fluid">
 <span class="text-muted">
-  <div class="footer">
+-->
+<!--collapsable footer -->
+<div class="footer" id="myFooter">
   <ul>
     <li><a href="#">© COPYRIGHT 2019</a></li>
     <li><a href="#">LEGAL NOTICE</a></li>
     <li><a href="#">PRIVACY POLICY</a></li>
+    <div class="footer-right">
     <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
     <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
     <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
     <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </ul>
 </div>
+</div>
+<!--part of sticky nav-footer code
 </span>
+-->
 </div>
 </footer>
+
+<!-- script for stick nav-footer
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+end script for sticky nav-footer -->
+
+<!--collapsable footer script -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myFooter");
+  if (x.className === "footer") {
+    x.className += "responsive";
+  } else {
+    x.className = "footer";
+  }
+}
+</script>
 
 
 <!-- original footer code
