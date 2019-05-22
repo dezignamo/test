@@ -1,20 +1,38 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" dir="ltr">
 <head>
-  <title>Eddie Vedder About</title>
+<title>Eddie Vedder About</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- My Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="sticky-footer-navbar.css" rel="stylesheet">
-  <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- sticky footer nav-footer-->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- my custom css-->
+    <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <style>
- th, td {
- padding: 5px 10px;
+ th {
+   text-decoration: none;
+   font-family: 'Barlow', sans-serif;
+   font-weight: 600;
+   letter-spacing: 1px;
+   padding: 5px 10px;
+}
+td {
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  padding: 5px 10px;
 }
 p.small {
  line-height: 1.5;
@@ -24,20 +42,28 @@ line-height: .03;
 }
 
 ul.social-causes {
-    padding: 0;
-    list-style-type: none;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  padding: 0;
+  list-style-type: none;
 }
 
 td.no-indent {
-    padding: 0;
+  padding: 0;
 }
 
  h3.less-space {
+  line-height: 1.5;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
   margin-bottom: 0;
 }
 
 .row-m-t {
-  margin-top : 20px
+  margin-top: 20px
 }
 
 .img-fluid {
@@ -50,7 +76,7 @@ td.no-indent {
 </head>
 
   <!--  bootstrap fixed navigation  -->
-    <body style="height:1400px">
+    <body style="height:1000px">
 
   <!-- bootstreap fixed nav, changed navigation background-color
   <nav class="navbar-default navbar navbar-fixed-top">
@@ -74,10 +100,10 @@ td.no-indent {
     <ul>
       <li><a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
       </li>
-      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="about.html">About</a></li>
       <li><a href="media.html">Media</a></li>
       <li><a href="discography.html">Discography</a></li>
-      <li><a href="merchandise-filtering.html">Merchandise</a></li>
+      <li><a href="merchandise-v2-filtering.html">Merchandise</a></li>
       <li><a href="tour.html">Tour</a></li>
     </ul>
   </nav>
@@ -94,7 +120,7 @@ td.no-indent {
       </div>
 
 
- <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="col-sm-4 col-md-4 col-lg-4">
         <p><b>EDDIE VEDDER</b> <i>(born Edward Louis Severson III; December 23, 1964)</i> is an American musician, multi instrumentalist and singer-songwriterbest known as the lead vocalist and one of three guitarists of the American rock band Pearl Jam. He is known for his powerful baritone vocals. He also appeared as a guest vocalist in Temple of the Dog, the one-off tribute band dedicated to the late singer Andrew Wood. Hit Parader magazine placed him at number 23 on their list of the "Top 100 Metal Vocalists of All Time".</p>
 
         <p>In 2007, Vedder released his first solo album as a soundtrack for the film Into the Wild (2007). His second album Ukulele Songs and a live DVD titled Water on the Road were released in 2011.</p>
@@ -119,7 +145,7 @@ td.no-indent {
           </tr>
       </table>
 
-      <h3 class="less-space">SOCIAL CAUSES</h3>
+      <h3 class="less-space"> SOCIAL CAUSES</h3>
 
       <ul class="social-causes">
         <li>Artists for Peace and Justice</li>
@@ -141,6 +167,7 @@ td.no-indent {
       </div>
   </div>
 </div>
+</div>
 
   <!-- end 3-column body section -->
 
@@ -156,19 +183,20 @@ td.no-indent {
       <li><a href="#">© COPYRIGHT 2019</a></li>
       <li><a href="#">LEGAL NOTICE</a></li>
       <li><a href="#">PRIVACY POLICY</a></li>
-      <div class="footer-right">
-      <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
-      <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
-      <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
-      <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
+        <div class="footer-right">
+          <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
+          <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
+          <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
+          <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
+        </div>
+      </ul>
+
       <!--<part of collapsable footer that didn't work
       a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
-    </div>
-    </ul>
+
 
   <!--part of sticky nav-footer code -->
   </span>
-
   </div>
   </footer>
 

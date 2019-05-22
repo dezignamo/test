@@ -1,166 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <title>Vedder Merchandise</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vedder Merchandise</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="album.css" rel="stylesheet">
+    <!-- My Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- sticky footer nav-footer-->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- my custom css-->
     <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-</head>
-<!--  bootstrap fixed navigation  -->
-  <body style="height:1400px">
+    <style>
+      .row {
+        margin-bottom: 15px;
+      }
 
-<!-- bootstreap fixed nav, changed navigation background-color
-<nav class="navbar-default navbar navbar-fixed-top">
-  <div class="container-fluid">
-    <ul class="navbar-default nav ul li a">
-      <li><a href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a><li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li class="active"><a href="discopgraphy.html">Discography</a></li>
-      <li><a href="merchandise.html">Merchandise</a></li>
-      <li><a href="tour.html">Tour</a></li>
-    </ul>
-  </div>
-  </div>
-</nav>
-  -->
+    </style>
+  </head>
+    <body style="height:2000px">
 
-<!-- original non-fixed nav bar -->
+    <!-- original non-fixed nav bar -->
 
-<nav class="navbar-fixed-top">
-  <ul>
-    <li><a class="logo" href="index.html"><img src="images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
-    </li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="media.html">Media</a></li>
-    <li><a href="discography.html">Discography</a></li>
-    <li><a class="active" href="merchandise-filtering.html">Merchandise</a></li>
-    <li><a href="tour.html">Tour</a></li>
-  </ul>
-</nav>
+    <nav class="navbar-fixed-top">
+      <ul>
+        <li><a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="discography.html">Discography</a></li>
+        <li><a class="active" href="merchandise-v2-filtering.html">Merchandise</a></li>
+        <li><a href="tour.html">Tour</a></li>
+      </ul>
+    </nav>
 
+<!-- end original non-fixed nav bar -->
 
-
+<!-- content-wrap keeps content away from nav and footer?
+<div class="content-wrap">
+   -->
 <!-- Control buttons -->
-<div id="myBtnContainer">
+<div class="btn-container">
   <button type="button" class="btn btn-sm" onclick="filterSelection('all')"> Show all</button>
   <button type="button" class="btn btn-sm" onclick="filterSelection('clothing')"> Clothing</button>
   <button type="button" class="btn btn-sm" onclick="filterSelection('art')"> Art</button>
   <button type="button" class="btn btn-sm" onclick="filterSelection('tchotchke')"> Tchotchke</button>
 </div>
+</div>
 
-
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <div class="container">
-<div class="filterDiv clothing">
-  <img src="images/filter/merch-ev-collage-shirt_600x600.jpg" alt="Eddie Vedder photo t-shirt" style="width:100%">
-  <div class="container">
-    <h5 class="card-title">Eddie Vedder Photo Collage Shirt.</h5>
-    <p>Colorful collage shirt of Eddie Vedder photos.</p>
-  </div>
-</div>
-</div>
-<!-- bootstrap stick footer -->
-<footer class="footer mt-auto py-3">
-<div class="container-fluid">
-<span class="text-muted">
+      <div class="row">
+      <div class="card-deck">
 
-<!--collapsable footer
-<div class="footer" id="myFooter">
- -->
-  <ul>
-    <li><a href="#">© COPYRIGHT 2019</a></li>
-    <li><a href="#">LEGAL NOTICE</a></li>
-    <li><a href="#">PRIVACY POLICY</a></li>
-    <div class="footer-right">
-    <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
-    <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
-    <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
-    <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
-    <!--<part of collapsable footer that didn't work
-    a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
+          <div class="card shadow-sml">
+      <img class="card-img-top" src="images/filter/merch-ev-collage-shirt_600x600.jpg" alt="Eddie Vedder photo t-shirt">
+        <div class="card-img-overlay d-flex justify-content-end">
+          <a href="#" class="card-link text-danger like">
+            <i class="fas fa-heart"></i></a></div>
+        <div class="card-body text-white bg-dark">
+          <h4 class="card-title">Eddie Vedder Photo Collage Shirt</h4>
+          <p class="card-text">Colorful collage shirt of Eddie Vedder photos.</p>
+            <div class="options d-flex flex-fill">
+              <select class="custom-select ml-1">
+                <option selected>Size</option>
+                <option value="1">Sml</option>
+                <option value="2">Med</option>
+                <option value="3">Lrg</option>
+              </select>
+            </div>
+          <div class="buy d-flex justify-content-between align-items-center">
+            <div class="price text-warning"><h5 class="mt-4">$50</h5></div>
+          <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+        </div>
+      </div>
 
-  </ul>
-</div>
-</div>
-<!--part of sticky nav-footer code -->
-</span>
 
-</div>
-</footer>
 
-<!-- script for stick nav-footer  -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-  <!-- end script for sticky nav-footer -->
+        <div class="card shadow-sml">
+        <img class="card-img-top" src="images/filter/merch-wall-print-600x600.jpg" alt="Eddie Vedder Painting">
+          <div class="card-img-overlay d-flex justify-content-end">
+            <a href="#" class="card-link text-danger like">
+              <i class="fas fa-heart"></i></a></div>
+          <div class="card-body text-white bg-dark">
+            <h4 class="card-title">Eddie Vedder Poster</h4>
+            <p class="card-text">Poster styled as a Modern art painting. Guaranteed to add style to any room.</p>
+              <div class="options d-flex flex-fill">
+                <select class="custom-select ml-1">
+                  <option selected>Size</option>
+                  <option value="1">8x10</option>
+                  <option value="2">14x20</option>
+                  <option value="3">24x36</option>
+                </select>
+              </div>
+            <div class="buy d-flex justify-content-between align-items-center">
+              <div class="price text-warning"><h5 class="mt-4">$50</h5></div>
+            <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+          </div>
+        </div>
 
-<!--collapsable footer script
-<script>
-function myFunction() {
-  var x = document.getElementById("myFooter");
-  if (x.className === "footer") {
-    x.className += "responsive";
-  } else {
-    x.className = "footer";
-  }
-}
-</script>
- -->
 
-<!-- filtering scripts
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("card-deck");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+          <div class="card shadow-sml">
+          <img class="card-img-top" src="images/filter/merch-yoga-pants_600x600.jpg" alt="Yoga Pants">
+            <div class="card-img-overlay d-flex justify-content-end">
+              <a href="#" class="card-link text-danger like">
+                <i class="fas fa-heart"></i></a></div>
+            <div class="card-body text-white bg-dark">
+              <h4 class="card-title">Yoga Pants</h4>
+              <p class="card-text">Comfortable classic yoga leggings. Perfect for your favorite poses.</p>
+                <div class="options d-flex flex-fill">
+                  <select class="custom-select ml-1">
+                    <option selected>Size</option>
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="3">L</option>
+                  </select>
+                </div>
+              <div class="buy d-flex justify-content-between align-items-center">
+                <div class="price text-warning"><h5 class="mt-4">$50</h5></div>
+              <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+            </div>
+          </div>
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace("active", "");
-    this.className += "active";
-  });
-}
-</script>
-end filtering scripts -->
 
-</body>
-</html>
+            <div class="card shadow-sml">
+            <img class="card-img-top" src="images/filter/ev-guitar-pick-collection_600x600.jpg" alt="Guitar Picks">
+              <div class="card-img-overlay d-flex justify-content-end">
+                <a href="#" class="card-link text-danger like">
+                  <i class="fas fa-heart"></i></a></div>
+              <div class="card-body text-white bg-dark">
+                <h4 class="card-title">Guitar Pick Collection</h4>
+                <p class="card-text">Play like Eddie. A collection of high quality picks with images of Eddie playing his guitar and live in concert.</p>
+                <div class="buy d-flex justify-content-between align-items-center">
+                  <div class="price text-warning"><h5 class="mt-4">$25</h5></div>
+                <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+              </div>
+            </div>
+
+            </div>
+            </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="card-deck">
+
+                    <div class="card shadow-sml">
+              <img class="card-img-top" src="images/filter/ev-jesus-framed-600x600.jpg" alt="Saint Eddie">
+                <div class="card-img-overlay d-flex justify-content-end">
+                  <a href="#" class="card-link text-danger like">
+                    <i class="fas fa-heart"></i></a></div>
+                <div class="card-body text-white bg-dark">
+                  <h4 class="card-title">St. Vedder Framed</h4>
+                  <p class="card-text">Saint or sinner? You be the judge.</p>
+                    <div class="options d-flex flex-fill">
+                      <select class="custom-select ml-1">
+                        <option selected>Size</option>
+                        <option value="1">8x10</option>
+                        <option value="2">14x20</option>
+                        <option value="3">24x36</option>
+                      </select>
+                    </div>
+                  <div class="buy d-flex justify-content-between align-items-center">
+                    <div class="price text-warning"><h5 class="mt-4">$50</h5></div>
+                  <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+                </div>
+              </div>
+
+
+
+
+                <div class="card shadow-sml">
+                <img class="card-img-top" src="images/filter/ev-mug_600x600.jpg" alt="Coffee Mug">
+                  <div class="card-img-overlay d-flex justify-content-end">
+                    <a href="#" class="card-link text-danger like">
+                      <i class="fas fa-heart"></i></a></div>
+                  <div class="card-body text-white bg-dark">
+                    <h4 class="card-title">Coffee Mug</h4>
+                    <p class="card-text">Get your morning buzz in style. Dark color that doesn't show ugly coffee stains. You'll never have to wash it!</p>
+                    <div class="buy d-flex justify-content-between align-items-center">
+                      <div class="price text-warning"><h5 class="mt-4">$15</h5></div>
+                    <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+                  </div>
+                </div>
+
+
+
+                  <div class="card shadow-sml">
+                  <img class="card-img-top" src="images/filter/ev-pillow-cover-600x600.jpg" alt="Eddie Vedder Pillow">
+                    <div class="card-img-overlay d-flex justify-content-end">
+                      <a href="#" class="card-link text-danger like">
+                        <i class="fas fa-heart"></i></a></div>
+                    <div class="card-body text-white bg-dark">
+                      <h4 class="card-title">Eddie Vedder Pillow</h4>
+                      <p class="card-text">Sleep on this! Pass out in style on this colorful pillow with photos of Eddie live in concert.</p>
+                      <div class="buy d-flex justify-content-between align-items-center">
+                        <div class="price text-warning"><h5 class="mt-4">$25</h5></div>
+                      <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+                    </div>
+                  </div>
+
+
+
+
+                    <div class="card shadow-sml">
+                    <img class="card-img-top" src="images/filter/ev-prayer-candle_600x600.jpg" alt="Prayer Candle">
+                      <div class="card-img-overlay d-flex justify-content-end">
+                        <a href="#" class="card-link text-danger like">
+                          <i class="fas fa-heart"></i></a></div>
+                      <div class="card-body text-white bg-dark">
+                        <h4 class="card-title">Prayer Candle</h4>
+                        <p class="card-text">Perfect additionn to your alter. Pray to the gods of music.</p>
+                        <div class="buy d-flex justify-content-between align-items-center">
+                          <div class="price text-warning"><h5 class="mt-4">$10</h5></div>
+                        <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+
+                  <div class="container">
+                    <div class="row">
+                    <div class="card-deck">
+
+                      <div class="card shadow-sml">
+                      <img class="card-img-top" src="images/filter/ev-sweatshirt_600x600.jpg" alt="Sweatshirt">
+                        <div class="card-img-overlay d-flex justify-content-end">
+                          <a href="#" class="card-link text-danger like">
+                            <i class="fas fa-heart"></i></a></div>
+                        <div class="card-body text-white bg-dark">
+                          <h4 class="card-title">Hoodie</h4>
+                          <p class="card-text">Stay warm and cool. Black 100% cotton hoodie will keep you warm while looking cool.</p>
+                            <div class="options d-flex flex-fill">
+                              <select class="custom-select ml-1">
+                                <option selected>Size</option>
+                                <option value="1">S</option>
+                                <option value="2">M</option>
+                                <option value="3">L</option>
+                              </select>
+                            </div>
+                          <div class="buy d-flex justify-content-between align-items-center">
+                            <div class="price text-warning"><h5 class="mt-4">$50</h5></div>
+                          <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+                        </div>
+                      </div>
+
+
+
+                            <div class="card shadow-sml">
+                          <img class="card-img-top" src="images/filter/ev-tshirt-black_600x600.jpg" alt="Eddie Vedder t-shirt">
+                            <div class="card-img-overlay d-flex justify-content-end">
+                              <a href="#" class="card-link text-danger like">
+                                <i class="fas fa-heart"></i></a></div>
+                            <div class="card-body text-white bg-dark">
+                              <h4 class="card-title">Black t-shirt</h4>
+                              <p class="card-text">Classic tee. Perfect for church, a date or hanging out with your buddies.</p>
+                                <div class="options d-flex flex-fill">
+                                  <select class="custom-select ml-1">
+                                    <option selected>Size</option>
+                                    <option value="1">S</option>
+                                    <option value="2">M</option>
+                                    <option value="3">L</option>
+                                  </select>
+                                </div>
+                              <div class="buy d-flex justify-content-between align-items-center">
+                                <div class="price text-warning"><h5 class="mt-4">$20</h5></div>
+                              <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+                            </div>
+                          </div>
+
+
+
+                            <div class="card shadow-sml">
+                            <img class="card-img-top" src="images/filter/ev-wall-clock_600x600.jpg" alt="Wall Clock">
+                              <div class="card-img-overlay d-flex justify-content-end">
+                                <a href="#" class="card-link text-danger like">
+                                  <i class="fas fa-heart"></i></a></div>
+                              <div class="card-body text-white bg-dark">
+                                <h4 class="card-title">Wall Clock</h4>
+                                <p class="card-text">Never be on time for anything again.This clock will look great on your wall but still won't help you be punctual.</p>
+                                <div class="buy d-flex justify-content-between align-items-center">
+                                  <div class="price text-warning"><h5 class="mt-4">$50</h5></div>
+                                <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                              </div>
+                              </div>
+                            </div>
+
+
+
+                                  <div class="card shadow-sml">
+                                <img class="card-img-top" src="images/filter/ev-shoes_600x600.jpg" alt="Eddie Vedder Shoes">
+                                  <div class="card-img-overlay d-flex justify-content-end">
+                                    <a href="#" class="card-link text-danger like">
+                                      <i class="fas fa-heart"></i></a></div>
+                                  <div class="card-body text-white bg-dark">
+                                    <h4 class="card-title">Eddie Vedder Shoes</h4>
+                                    <p class="card-text">Stay light on your feet and keep moving in these. Comfy enough to dance all night. Stylish enough to wear on a date.</p>
+                                      <div class="options d-flex flex-fill">
+                                        <select class="custom-select ml-1">
+                                          <option selected>Size</option>
+                                          <option value="1">S</option>
+                                          <option value="2">M</option>
+                                          <option value="3">L</option>
+                                        </select>
+                                      </div>
+                                    <div class="buy d-flex justify-content-between align-items-center">
+                                      <div class="price text-warning"><h5 class="mt-4">$20</h5></div>
+                                    <a href="#" class="btn btn-cart mt-3"><i class="fas fa-shopping-cart"></i> Add to Cart</a></div>
+                                  </div>
+                                </div>
+
+                                </div>
+                                </div>
+                                </div>
+
+
+
+    <!-- bootstrap stick footer -->
+    <footer class="footer mt-auto">
+    <div class="container-fluid">
+    <span class="text-muted">
+
+    <!--collapsable footer
+    <div class="footer" id="myFooter">
+     -->
+      <ul>
+        <li><a href="#">© COPYRIGHT 2019</a></li>
+        <li><a href="#">LEGAL NOTICE</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+        <div class="footer-right">
+        <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
+        <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
+        <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
+        <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
+        <!--<part of collapsable footer that didn't work
+        a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
+      </div>
+      </ul>
+
+    <!--part of sticky nav-footer code -->
+    </span>
+    </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   </body>
+ </html>

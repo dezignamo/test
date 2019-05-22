@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" dir="ltr">
 <head>
-  <title>Eddie Vedder Ground Zero</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Eddie Vedder Ground Zero</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
+<!-- My Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- sticky footer nav-footer-->
+<link href="sticky-footer-navbar.css" rel="stylesheet">
+
+<!-- my custom css-->
+<link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
 body  {
   background-image: url("live-music-cover.jpg");
   background-position: center;
@@ -23,9 +32,8 @@ body  {
 
 </head>
 
-
-  <!--  bootstrap fixed navigation  -->
-    <body style="height:1600px">
+<!--  bootstrap fixed navigation  -->
+<body style="height:1600px">
 
   <!-- bootstreap fixed nav, changed navigation background-color
   <nav class="navbar-default navbar navbar-fixed-top">
@@ -47,12 +55,12 @@ body  {
 
   <nav class="navbar-fixed-top">
     <ul>
-      <li><a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
+      <li><a class="logo active" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
       </li>
       <li><a href="about.html">About</a></li>
       <li><a href="media.html">Media</a></li>
       <li><a href="discography.html">Discography</a></li>
-      <li><a href="merchandise-filtering.html">Merchandise</a></li>
+      <li><a href="merchandise-v2-filtering.html">Merchandise</a></li>
       <li><a href="tour.html">Tour</a></li>
     </ul>
   </nav>
@@ -61,38 +69,41 @@ body  {
 
 
 
-<!-- bootstrap stick footer
+<!-- bootstrap stick footer -->
 <footer class="footer mt-auto py-3">
 <div class="container-fluid">
 <span class="text-muted">
--->
-<!--collapsable footer -->
+
+<!--collapsable footer
 <div class="footer" id="myFooter">
+ -->
   <ul>
     <li><a href="#">© COPYRIGHT 2019</a></li>
     <li><a href="#">LEGAL NOTICE</a></li>
     <li><a href="#">PRIVACY POLICY</a></li>
-    <div class="footer-right">
-    <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
-    <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
-    <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
-    <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </ul>
-</div>
-</div>
-<!--part of sticky nav-footer code
+      <div class="footer-right">
+        <li><a href="#"><img src="images/facebook-red-f-white-circle-21x21.png" class="facebook" /></a></li>
+        <li><a href="#"><img src="images/instagram-red-camera-white-circle-21x21.png" class="instagram" /></a></li>
+        <li><a href="#"><img src="images/twitter-red-bird-white-circle-21x21.png" class="twitter" /></a></li>
+        <li><a href="#"><img src="images/youtube-red-playbtn-white-circle-21x21.png" class="youtube" /></a></li>
+      </div>
+    </ul>
+
+    <!--<part of collapsable footer that didn't work
+    a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
+
+
+<!--part of sticky nav-footer code -->
 </span>
--->
 </div>
 </footer>
 
-<!-- script for stick nav-footer
+<!-- script for stick nav-footer  -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-end script for sticky nav-footer -->
+  <!-- end script for sticky nav-footer -->
 
-<!--collapsable footer script -->
+<!--collapsable footer script
 <script>
 function myFunction() {
   var x = document.getElementById("myFooter");
@@ -103,7 +114,7 @@ function myFunction() {
   }
 }
 </script>
-
+ -->
 
 <!-- original footer code
 <footer>
