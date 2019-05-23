@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <title>Eddie Vedder Media</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Eddie Vedder Media</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,800" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 <!-- sticky footer nav-footer-->
-  <link href="sticky-footer-navbar.css" rel="stylesheet">
+<link href="sticky-footer-navbar.css" rel="stylesheet">
 
 <!-- my custom css-->
-  <link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
+<link href="css/eddie-vedder-styles.css" type="text/css" rel="stylesheet">
 
-  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
 
 </head>
 
@@ -43,7 +46,7 @@
 
   <nav class="navbar-fixed-top">
     <ul>
-      <li><a class="logo" href="index.html"><img src="./images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
+      <li><a class="logo" href="index.html"><img src="images/eddie-vedder-logotype-150x37.png" alt="eddie vedder logo"></a>
       </li>
       <li><a href="about.html">About</a></li>
       <li><a class="active" href="media.html">Media</a></li>
@@ -55,13 +58,37 @@
 
   <!-- end original non-fixed nav bar -->
 
-  <!-- content-wrap keeps content away from nav and footer?   -->
+  <!-- content-wrap keeps content away from nav and footer?
     <div class="content-wrap">
+   -->
+<!-- container keeps space between nav bar and videos -->
+   <div class="btn-container"></div>
 
-<!-- start 4-column body section  -->
+<!-- start 4-column video section  -->
+<div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <iframe width="375" height="211" src="https://www.youtube.com/embed/No6cDRmH52w?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <iframe width="375" height="211" src="https://www.youtube.com/embed/b4K5od-uZEY?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <iframe width="375" height="211" src="https://www.youtube.com/embed/2mA-Xn2Dx-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <iframe width="375" height="211" src="https://www.youtube.com/embed/kVWtrvDZRzU?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        </div>
+
+<!-- start 4-column lightbox section (I think Btstrp v4 lightbox doesn't work because nav-footer is v3)  -->
 
 <div class="container-fluid">
-  <div class="row">
+<div class="row">
     <div class="col-xs-12 col-md-3">
       <img src="images/media_guaranteed_bus_400x300.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     </div>
@@ -77,9 +104,8 @@
     <div class="col-xs-12 col-md-3">
       <img src="images/media-hide-your-love_400x300.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
-  </div>
-  </div>
-  </div>
+    </div>
+
 
 
 <div id="myModal" class="modal">
@@ -88,22 +114,22 @@
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <iframe src="https://www.youtube.com/embed/Mwx3RvDWvDM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%">
+      <img src="images/media_guaranteed_bus_400x300.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <iframe src="https://www.youtube.com/embed/b4K5od-uZEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%"></iframe>
+      <img src="images/media-boat-ukulele_400x300.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <iframe src="https://www.youtube.com/embed/q0hJSlUd80I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%"></iframe>
+      <img src="images/media-hard-sun_400x300.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <iframe  src="https://www.youtube.com/embed/8Ix-cJZv5vc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%"></iframe>
+      <img src="images/media-hide-your-love_400x300.jpg" style="width:100%">
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -116,25 +142,45 @@
 
 
     <div class="column">
-      <iframe  class="demo cursor" src="https://www.youtube.com/embed/Mwx3RvDWvDM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%" onclick="currentSlide(1)" alt="Guaranteed, from Into The Wild"></iframe>
+      <img class="demo cursor" src="images/media_guaranteed_bus_400x300.jpg" style="width:100%"  onclick="currentSlide(1)" alt="Guaranteed, from Into The Wild">
     </div>
     <div class="column">
-      <iframe class="demo cursor" src="https://www.youtube.com/embed/b4K5od-uZEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%" onclick="currentSlide(2)" alt="Hard Sun"></iframe>
+      <img class="demo cursor" src="images/media-boat-ukulele_400x300.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hard Sun">
     </div>
     <div class="column">
-      <iframe  class="demo cursor" src="https://www.youtube.com/embed/q0hJSlUd80I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%" onclick="currentSlide(3)" alt="Can't Keep"></iframe>
+      <img class="demo cursor" src="images/media-hard-sun_400x300.jpg" style="width:100%" onclick="currentSlide(3)" alt="Can't Keep">
     </div>
-    <div class="column">
-      <iframe class="demo cursor" src="https://www.youtube.com/embed/8Ix-cJZv5vc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%" onclick="currentSlide(4)" alt="Hide Your Love Away"></iframe>
+    <img class="demo cursor" class="column">
+      <img src="images/media-hide-your-love_400x300.jpg" style="width:100%" onclick="currentSlide(4)" alt="Hide Your Love Away">
     </div>
   </div>
 </div>
-</div>
+
+<!-- start second 4-column lightbox section (I think Btstrp v4 lightbox doesn't work because nav-footer is v3)-->
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-12 col-md-3">
+      <img src="images/media-cubs-fan-on-stage_400x300.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+
+    <div class="col-xs-12 col-md-3">
+      <img src="images/media-solo-hat_400x300.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+
+    <div class="col-xs-12 col-md-3">
+      <img src="images/media-stadium_400x300.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+
+    <div class="col-xs-12 col-md-3">
+      <img src="images/media-ukulele-ocean-rock_400x300.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    </div>
 
 
 
   <!-- bootstrap stick footer -->
-  <footer class="footer mt-auto py-3">
+  <footer class="footer mt-auto">
   <div class="container-fluid">
   <span class="text-muted">
 
@@ -206,11 +252,11 @@ function showSlides(n) {
 </script>
 
 <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+ -->
 
 </body>
 </html>
